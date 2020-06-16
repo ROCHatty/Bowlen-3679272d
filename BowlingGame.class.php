@@ -1,13 +1,12 @@
 <?php
+
 include_once "Player.class.php";
 include_once "ScoreBoard.class.php";
-
 class BowlingGame
 {
     private $scoreBoard;
     private $players;
     private $round;
-
     public function __construct()
     {
         echo "Welcome the the bowling game!" . PHP_EOL;
@@ -86,8 +85,8 @@ class BowlingGame
             $player -> throwPins($firstThrow, $secondThrow);
             if ($doThirdThrow) {
                 echo "And what is your third throw?" . PHP_EOL;
-            $thirdThrow = readline("> ");
-            $player -> throwPins($thirdThrow);
+                $thirdThrow = readline("> ");
+                $player -> throwPins($thirdThrow);
             }
         }
     }
@@ -101,7 +100,6 @@ class BowlingGame
         }
 
         echo PHP_EOL . PHP_EOL . "LAST ROUND!!!!!!!" . PHP_EOL . PHP_EOL;
-
         $this -> playLastRound();
     }
 }
