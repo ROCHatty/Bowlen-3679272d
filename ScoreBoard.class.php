@@ -1,6 +1,7 @@
 <?php
 
-class ScoreBoard {
+class ScoreBoard
+{
     private $scores;
     private $players;
 

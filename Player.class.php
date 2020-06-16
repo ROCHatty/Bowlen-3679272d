@@ -1,6 +1,7 @@
 <?php
 
-class Player {
+class Player
+{
     public $name;
     public $pinsThrown;
 
